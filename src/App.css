@@ -1,38 +1,263 @@
-.App {
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+.home_area {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../src/images/bg_image.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* Logo */
+.logo {
+  width: 200px;
+}
+
+/* Navbar */
+.nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.name_text {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Button */
+.button {
+  padding: 12px 36px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  transition: all ease-in-out 0.2s;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.register_btn {
+  background: #3F90FC;
+  border-radius: 6px;
+}
+
+.register_btn:hover,
+.search_btn:hover {
+  background: #167bff;
+}
+
+.admin_btn {
+  background: #000;
+  border-radius: 6px;
+}
+
+.search_btn {
+  background: #3F90FC;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Search */
+.search_title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+.search_box {
+  background: #FBFBFB;
+  border: 1px solid #D6D6D6;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border-radius: 6px 0 0 6px;
+  font-weight: 500;
+}
+
+.search_box:focus {
+  outline: none;
+}
+
+/* Events Card */
+.events_card {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card_btn {
+  background: #FF7044;
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  /* bottom: -65px; */
+  bottom: 0;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  transition: all ease-in-out 0.3s;
+}
+
+.card_btn:focus {
+  outline: none;
+}
+
+/* .card:hover .card_btn {
+  bottom: 0;
+} */
+
+/* Login Form */
+.login_form {
+  background: #F7F9FB;
+  height: 100%;
+  padding: 50px 0;
+}
+
+.login_card {
+  border: 1px solid #ABABAB;
+  box-sizing: border-box;
+  border-radius: 4px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login_title,
+.register_title {
+  font-weight: bold;
+  font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login_btn {
+  color: #000;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #C7C7C7;
+  box-sizing: border-box;
+  border-radius: 57px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.login_text {
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+/* Register Form */
+.register_form {
+  background: #F7F9FB;
+  height: 100%;
+  padding: 50px 0
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.register_card {
+  border: 1px solid #ABABAB;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 470px;
+  padding: 0 20px;
+}
+
+.register_input {
+  background: #FBFBFB;
+  border: 1px solid #D6D6D6;
+  padding: 10px;
+  box-sizing: border-box;
+  font-weight: 500;
+  width: 100%;
+  margin: 6px 0;
+}
+
+.register_input:focus {
+  outline: none;
+  border-color: gray;
+}
+
+.error_text {
+  font-size: 12px;
+  color: red;
+  font-weight: 600;
+}
+
+/* Event Tasks */
+.eventTasks_page {
+  background: #F7F9FB;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.task_img {
+  width: 100%;
+}
+
+.event_tasks_card {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  border: none;
+}
+
+.cancel_btn {
+  color: #000;
+  position: absolute;
+  bottom: 7%;
+  right: 5%;
+}
+
+.cancel_btn:hover {
+  background: rgba(128, 128, 128, 0.425);
+}
+
+.task_text {
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 32px;
+}
+
+.task_date {
+  font-weight: 600;
+  font-size: 16px;
+  color: gray;
+}
+
+/* Volunteer List */
+.volunteer_bg,
+.addEvent_bg {
+  background: #F7F9FB;
+  height: 90vh;
+}
+
+.volunteer_card,
+.addEvent_card {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  border: none;
+}
+
+.t_head {
+  background: #F5F6FA;
+}
+
+.t_data {
+  font-size: 15px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.volunteer_text,
+.addEvent_text {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.addEvent_card label {
+  font-weight: 600;
+  font-size: 16px;
 }
