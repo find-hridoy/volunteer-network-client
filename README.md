@@ -1,6 +1,7 @@
--Through this website, a user can add any of his data if he wants and delete it in the next. <br/> 
--Moreover, the user can provide the service to someone else if he wants. <br/> 
--This is a dynamic website.<br/>
+❖ Make a home page with all-volunteer services.<br/>
+❖ Users can add service by sign in and manage it.<br/>
+❖ Admin dashboard to manage all users.<br/>
+
 -**[Live Website](https://volunteer-network-simple.web.app/)**
 
 <h3 align="left">Languages and Tools:</h3>
